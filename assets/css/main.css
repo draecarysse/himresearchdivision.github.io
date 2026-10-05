@@ -1,0 +1,190 @@
+:root {
+
+    --black: #050605;
+    --dark: #090b09;
+    --panel: #0d100d;
+
+    --green: #88e926;
+    --green-bright: #d5fe00;
+
+    --gray: #8b8c90;
+
+    --red: #d11d1d;
+
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #151915 0%,
+            #080a08 45%,
+            #030403 100%
+        );
+
+    color: var(--green);
+
+    font-family:
+        "Courier New",
+        monospace;
+
+}
+
+
+.terminal {
+
+    width: min(1200px, 94vw);
+
+    min-height: 90vh;
+
+    margin: 5vh auto;
+
+    background:
+        rgba(5, 7, 5, 0.96);
+
+    border:
+        1px solid var(--green);
+
+}
+
+
+.terminal-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 18px 24px;
+
+    border-bottom:
+        1px solid var(--green);
+
+}
+
+
+.institution {
+
+    color:
+        var(--green-bright);
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.division {
+
+    margin-top: 4px;
+
+    color: var(--gray);
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.header-right {
+
+    text-align: right;
+
+    color: var(--gray);
+
+    font-size: 9px;
+
+    line-height: 1.8;
+
+}
+
+
+.status-light {
+
+    width: 9px;
+    height: 9px;
+
+    display: inline-block;
+
+    margin-right: 12px;
+
+    background:
+        var(--green);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 10px var(--green);
+
+}
+
+
+.header-left {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.terminal-screen {
+
+    min-height: 650px;
+
+    padding: 60px;
+
+}
+
+
+.terminal-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 12px 24px;
+
+    border-top:
+        1px solid var(--green);
+
+    color:
+        #6f8924;
+
+    font-size: 8px;
+
+}
+
+
+.scanlines {
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 100;
+
+    background:
+        repeating-linear-gradient(
+            to bottom,
+            rgba(255,255,255,0.025),
+            rgba(255,255,255,0.025) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+
+}
