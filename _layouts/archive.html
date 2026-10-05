@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        {{ page.title }} — Heavenly Irregularity Monitoring
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="{{ '/assets/css/main.css' | relative_url }}"
+    >
+
+</head>
+
+<body>
+
+    <div class="scanlines"></div>
+
+    <main class="terminal">
+
+        <header class="terminal-header">
+
+            <div class="header-left">
+
+                <div class="status-light"></div>
+
+                <div>
+
+                    <p class="institution">
+                        HEAVENLY IRREGULARITY MONITORING
+                    </p>
+
+                    <p class="division">
+                        RESEARCH DIVISION
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <p>SECURE ARCHIVE</p>
+
+                <p>
+                    NODE: HIM-1510
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <section class="terminal-screen">
+
+            {{ content }}
+
+        </section>
+
+
+        <footer class="terminal-footer">
+
+            <span>
+                HEAVENLY IRREGULARITY MONITORING © 2026
+            </span>
+
+            <span>
+                ALL RECORDS CLASSIFIED
+            </span>
+
+            <span>
+                NODE: HIM-1510
+            </span>
+
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
