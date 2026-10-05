@@ -10,7 +10,7 @@
 
 const ARCHIVE_CONFIG = {
 
-    firstPassword: "morningstar",
+    firstPassword: "MORNING STAR",
 
     nextArchive:
         "files/morning-star.html"
