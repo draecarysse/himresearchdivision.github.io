@@ -1,0 +1,11 @@
+title: Heavenly Irregularity Monitoring
+description: Classified Research Archive
+baseurl: "/himresearchdivision"
+url: ""
+
+markdown: kramdown
+
+collections:
+  archives:
+    output: true
+    permalink: /archives/:name/
