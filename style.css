@@ -1,0 +1,863 @@
+/* =========================================================
+   HEAVENLY IRREGULARITY MONITORING
+   SECURE ARCHIVE TERMINAL
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=VT323&display=swap');
+
+
+/* =========================================================
+   VARIABLES
+   ========================================================= */
+
+:root {
+
+    --black: #050605;
+    --dark: #090b09;
+    --panel: #0d100d;
+
+    --green: #88e926;
+    --green-bright: #d5fe00;
+    --green-dark: #252503;
+
+    --white: #dfe4e5;
+    --gray: #8b8c90;
+
+    --red: #d11d1d;
+
+    --gold: #ffcb3e;
+
+    --border: rgba(136, 233, 38, 1);
+
+}
+
+
+/* =========================================================
+   RESET
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+}
+
+
+body {
+
+    background:
+        radial-gradient(
+            circle at center,
+            #151915 0%,
+            #080a08 45%,
+            #030403 100%
+        );
+
+    color: var(--green);
+
+    font-family:
+        "IBM Plex Mono",
+        monospace;
+
+    overflow-x: hidden;
+
+}
+
+
+/* =========================================================
+   CRT SCANLINES
+   ========================================================= */
+
+.scanlines {
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 100;
+
+    background:
+        repeating-linear-gradient(
+            to bottom,
+            rgba(255,255,255,0.025),
+            rgba(255,255,255,0.025) 1px,
+            transparent 1px,
+            transparent 4px
+        );
+
+}
+
+
+/* =========================================================
+   NOISE
+   ========================================================= */
+
+.noise {
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    z-index: 99;
+
+    opacity: 0.045;
+
+    background-image:
+        url("https://pngtree.com/freepng/black-particle-noise-floor_5422620.html");
+
+}
+
+
+/* =========================================================
+   TERMINAL
+   ========================================================= */
+
+.terminal {
+
+    width: min(1200px, 94vw);
+
+    min-height: 90vh;
+
+    margin: 5vh auto;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(18,22,18,0.96),
+            rgba(5,7,5,0.98)
+        );
+
+    border: 1px solid var(--border);
+
+    box-shadow:
+        0 0 30px rgba(0,0,0,0.8),
+        inset 0 0 60px rgba(0,0,0,0.8);
+
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.terminal-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 18px 24px;
+
+    border-bottom: 1px solid var(--border);
+
+    background: rgba(0,0,0,0.35);
+
+}
+
+
+.header-left {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+}
+
+
+.status-light {
+
+    width: 9px;
+
+    height: 9px;
+
+    background: var(--green);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 8px var(--green);
+
+    animation:
+        pulse 2s infinite;
+
+}
+
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.35;
+    }
+
+}
+
+
+.research {
+
+    color: var(--green-bright);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+}
+
+
+.division {
+
+    margin-top: 3px;
+
+    color: var(--gray);
+
+    font-size: 9px;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.header-right {
+
+    text-align: right;
+
+    color: var(--gray);
+
+    font-size: 9px;
+
+    line-height: 1.7;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================================================
+   SCREEN
+   ========================================================= */
+
+.terminal-screen {
+
+    padding: 70px 8vw 50px;
+
+    min-height: 650px;
+
+}
+
+
+/* =========================================================
+   BOOT
+   ========================================================= */
+
+.boot-text {
+
+    color: var(--gray);
+
+    font-size: 11px;
+
+    line-height: 1.8;
+
+    margin-bottom: 55px;
+
+}
+
+
+.boot-text p {
+
+    opacity: 0;
+
+    animation:
+        bootAppear 0.5s forwards;
+
+}
+
+
+.boot-text p:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+.boot-text p:nth-child(2) {
+    animation-delay: 0.8s;
+}
+
+.boot-text p:nth-child(3) {
+    animation-delay: 1.3s;
+}
+
+.boot-text p:nth-child(4) {
+    animation-delay: 1.8s;
+}
+
+
+@keyframes bootAppear {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.archive-title {
+
+    text-align: center;
+
+    margin-bottom: 50px;
+
+}
+
+
+.archive-title h1 {
+
+    font-family:
+        "VT323",
+        monospace;
+
+    color: var(--green-bright);
+
+    font-size:
+        clamp(38px, 6vw, 70px);
+
+    font-weight: 400;
+
+    letter-spacing: 5px;
+
+    text-shadow:
+        0 0 8px rgba(184,214,184,0.25);
+
+}
+
+
+.archive-title h2 {
+
+    margin-top: 4px;
+
+    color: var(--gray);
+
+    font-size: 10px;
+
+    letter-spacing: 5px;
+
+}
+
+
+.line {
+
+    display: block;
+
+    width: 100%;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--border),
+            transparent
+        );
+
+    margin: 18px 0;
+
+}
+
+
+/* =========================================================
+   WARNING
+   ========================================================= */
+
+.warning {
+
+    max-width: 700px;
+
+    margin: 0 auto 50px;
+
+    padding: 18px 20px;
+
+    border-left: 2px solid var(--red);
+
+    background:
+        rgba(100,30,30,0.06);
+
+    color: var(--gray);
+
+    font-size: 10px;
+
+    line-height: 1.8;
+
+}
+
+
+.warning p:first-child {
+
+    color: #a96565;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 5px;
+
+}
+
+
+/* =========================================================
+   ACCESS PANEL
+   ========================================================= */
+
+.access-panel {
+
+    max-width: 760px;
+
+    margin: auto;
+
+    padding: 25px;
+
+    border: 1px solid var(--border);
+
+    background:
+        rgba(0,0,0,0.35);
+
+}
+
+
+.access-panel label {
+
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--green-bright);
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.input-row {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.prompt {
+
+    color: var(--green);
+
+    font-family: "VT323", monospace;
+
+    font-size: 22px;
+
+}
+
+
+#password {
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 13px 10px;
+
+    background: #050705;
+
+    border: none;
+
+    border-bottom: 1px solid var(--green-dark);
+
+    outline: none;
+
+    color: var(--green-bright);
+
+    font-family:
+        "IBM Plex Mono",
+        monospace;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+}
+
+
+#password:focus {
+
+    border-bottom-color:
+        var(--green-bright);
+
+    box-shadow:
+        0 5px 12px
+        rgba(141,168,141,0.08);
+
+}
+
+
+#accessButton {
+
+    padding: 12px 20px;
+
+    background: transparent;
+
+    border: 1px solid var(--green-dark);
+
+    color: var(--green);
+
+    font-family:
+        "IBM Plex Mono",
+        monospace;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition:
+        0.2s ease;
+
+}
+
+
+#accessButton:hover {
+
+    color: var(--black);
+
+    background: var(--green);
+
+}
+
+
+.terminal-message {
+
+    min-height: 20px;
+
+    margin-top: 14px;
+
+    font-size: 10px;
+
+    letter-spacing: 1px;
+
+}
+
+
+.message-error {
+
+    color: #d11d1d;
+
+}
+
+
+.message-success {
+
+    color: var(--green-bright);
+
+}
+
+
+/* =========================================================
+   SYSTEM INFO
+   ========================================================= */
+
+.system-info {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    max-width: 760px;
+
+    margin: 35px auto 0;
+
+    border-top: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+.system-info div {
+
+    padding: 15px;
+
+    border-right:
+        1px solid var(--border);
+
+}
+
+
+.system-info div:last-child {
+
+    border-right: none;
+
+}
+
+
+.system-info span {
+
+    display: block;
+
+    color: var(--gray);
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.system-info strong {
+
+    color: var(--green);
+
+    font-size: 10px;
+
+    font-weight: 500;
+
+}
+
+
+/* =========================================================
+   CURSOR
+   ========================================================= */
+
+.cursor-line {
+
+    max-width: 760px;
+
+    margin: 45px auto 0;
+
+    color: var(--green-bright);
+
+    font-size: 9px;
+
+}
+
+
+.cursor {
+
+    display: inline-block;
+
+    width: 7px;
+
+    height: 12px;
+
+    margin-left: 5px;
+
+    vertical-align: middle;
+
+    background: var(--green);
+
+    animation:
+        blink 1s steps(1) infinite;
+
+}
+
+
+@keyframes blink {
+
+    50% {
+        opacity: 0;
+    }
+
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.terminal-footer {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 13px 24px;
+
+    border-top: 1px solid var(--border);
+
+    color: #6f8924;
+
+    font-size: 8px;
+
+    letter-spacing: 1px;
+
+}
+
+
+/* =========================================================
+   SUCCESS STATE
+   ========================================================= */
+
+.access-granted {
+
+    animation:
+        terminalFlash 0.8s ease;
+
+}
+
+
+@keyframes terminalFlash {
+
+    0% {
+        filter: brightness(1);
+    }
+
+    40% {
+        filter: brightness(1.8);
+    }
+
+    100% {
+        filter: brightness(1);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 700px) {
+
+    .terminal {
+
+        width: 96vw;
+
+        margin: 2vh auto;
+
+    }
+
+
+    .terminal-header {
+
+        padding: 14px;
+
+    }
+
+
+    .header-right {
+
+        display: none;
+
+    }
+
+
+    .terminal-screen {
+
+        padding:
+            50px 18px 40px;
+
+    }
+
+
+    .archive-title h1 {
+
+        font-size: 42px;
+
+        letter-spacing: 3px;
+
+    }
+
+
+    .archive-title h2 {
+
+        font-size: 8px;
+
+        letter-spacing: 3px;
+
+    }
+
+
+    .input-row {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    #password {
+
+        width: 100%;
+
+        flex-basis: 100%;
+
+    }
+
+
+    #accessButton {
+
+        width: 100%;
+
+    }
+
+
+    .system-info {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .system-info div:nth-child(2) {
+
+        border-right: none;
+
+    }
+
+
+    .system-info div:nth-child(-n+2) {
+
+        border-bottom:
+            1px solid var(--border);
+
+    }
+
+
+    .terminal-footer {
+
+        flex-direction: column;
+
+    }
+
+}
