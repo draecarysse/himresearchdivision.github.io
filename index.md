@@ -7,8 +7,11 @@ archive: UNKNOWN
 <div class="boot-text">
 
     <p>> INITIALIZING SECURE ARCHIVE...</p>
+    
     <p>> ESTABLISHING CONNECTION...</p>
+    
     <p>> CONNECTION ESTABLISHED.</p>
+    
     <p>> AUTHENTICATION REQUIRED.</p>
 
 </div>
