@@ -285,6 +285,46 @@ p { margin-bottom: 0; }
   text-transform: uppercase;
 }
 
+/* Audio control */
+
+.audio-control {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  min-height: 36px;
+  padding: 0 18px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(0, 0, 0, 0.22);
+  font-family: var(--font-terminal);
+  letter-spacing: 1px;
+}
+
+.audio-toggle {
+  padding: 5px 9px;
+  color: var(--green);
+  background: transparent;
+  border: 1px solid var(--green-dark);
+  font: inherit;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.audio-toggle:hover,
+.audio-toggle[aria-pressed="true"] {
+  color: var(--black);
+  background: var(--green);
+  border-color: var(--green-bright);
+}
+
+.audio-status {
+  color: var(--gray);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
 /* =========================================================
    09. TERMINAL CONTENT
    ========================================================= */
@@ -1329,6 +1369,17 @@ p { margin-bottom: 0; }
     min-width: auto;
     gap: 5px;
     font-size: 9px;
+  }
+
+  .audio-control {
+    flex-wrap: wrap;
+    gap: 6px 10px;
+    justify-content: flex-start;
+    padding: 8px 10px;
+  }
+
+  .audio-status {
+    font-size: 10px;
   }
 
   .terminal-content {
