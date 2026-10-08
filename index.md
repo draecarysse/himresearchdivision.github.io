@@ -10,14 +10,14 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
 
 <section id="boot-sequence" aria-label="System initialization">
 
-  <div class="terminal-line" data-text="> HIM BIOS v1.5.1 — COPYRIGHT (C) 1990"></div>
+  <div class="terminal-line" data-text="> HIM v1.5.1 — COPYRIGHT (C) 1990"></div>
   <div class="terminal-line" data-text="> HEAVENLY IRREGULARITY MONITORING"></div>
   <div class="terminal-line" data-text="> RESEARCH DIVISION — NODE HIM-1510"></div>
-  <div class="terminal-line" data-text="> MEMORY CHECK ........ 65536 KB OK"></div>
-  <div class="terminal-line" data-text="> CPU: HIM-X8 @ 433 MHz"></div>
-  <div class="terminal-line" data-text="> DETECTING PERIPHERALS ... OK"></div>
-  <div class="terminal-line" data-text="> MOUNTING /dev/archive0 . OK"></div>
-  <div class="terminal-line" data-text="> ESTABLISHING UPLINK .... OK"></div>
+  <div class="terminal-line" data-text="> MEMORY CHECK ........ SUCCESSFULLY REVIEWED"></div>
+  <div class="terminal-line" data-text="> CPU: HIM-X8 @ 666 MHz"></div>
+  <div class="terminal-line" data-text="> DETECTING PERIPHERALS ... SUCCESSFULLY REVIEWED"></div>
+  <div class="terminal-line" data-text="> MOUNTING /dev/archive0 . SUCCESSFULLY REVIEWED"></div>
+  <div class="terminal-line" data-text="> ESTABLISHING UPLINK .... SUCCESSFULLY REVIEWED"></div>
   <div class="terminal-line" data-text="> AUTHENTICATION REQUIRED."></div>
 
 </section>
@@ -33,7 +33,7 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
     <h1>HEAVENLY IRREGULARITY<br>MONITORING</h1>
     <div class="division-name">
       RESEARCH DIVISION
-      <span>// EST. 1990 //</span>
+      <span>// EST. 1990 // NODE HIM-1510</span>
     </div>
   </div>
 
@@ -55,7 +55,7 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
   <h2 class="section-title">FREQUENCY LOG</h2>
 
   <div class="freq-log">
-    <div class="freq-log__title">ACTIVE MONITORING — SECTOR 7</div>
+    <div class="freq-log__title">ACTIVE MONITORING — SECTOR 666</div>
 
     <div class="freq-row">
       <span class="freq-row__freq">14.332 MHz</span>
@@ -165,7 +165,7 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
     </p>
     <input type="text" class="password-gate__input" placeholder="ENTER KEY..." autocomplete="off">
     <br>
-    <button class="password-gate__btn" data-redirect="{{ '/files/morning-star' | relative_url }}">Authenticate</button>
+    <button class="password-gate__btn" data-redirect="{{ '/files/morning-star.html' | relative_url }}">Authenticate</button>
     <div class="password-gate__msg"></div>
   </div>
 
@@ -173,7 +173,7 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
   <nav class="him-nav">
     <a href="{{ '/' | relative_url }}" class="active">Home</a>
     <a href="{{ '/archive' | relative_url }}">Archive</a>
-    <a href="{{ '/files/morning-star' | relative_url }}">Files</a>
+    <a href="{{ '/files/morning-star.html' | relative_url }}">Files</a>
   </nav>
 
   <!-- Terminal prompt -->
