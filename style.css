@@ -220,6 +220,71 @@ p { margin-bottom: 0; }
   color: var(--green);
 }
 
+/* Archive header variant */
+.terminal-screen--archive .terminal-topbar {
+  min-height: 92px;
+  padding: 0 28px;
+  border: 1px solid var(--border-bright);
+  background:
+    repeating-linear-gradient(
+      0deg,
+      rgba(136, 233, 38, 0.018) 0,
+      rgba(136, 233, 38, 0.018) 1px,
+      transparent 1px,
+      transparent 4px
+    ),
+    var(--black-3);
+  box-shadow: inset 0 0 28px rgba(136, 233, 38, 0.035);
+}
+
+.terminal-screen--archive .topbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.terminal-screen--archive .terminal-dot {
+  width: 11px;
+  height: 11px;
+  border: 0;
+  background: var(--green-bright);
+  box-shadow: 0 0 8px var(--green), 0 0 16px rgba(136, 233, 38, 0.65);
+}
+
+.terminal-screen--archive .topbar-title {
+  color: var(--green-bright);
+  font-family: var(--font-display);
+  font-size: clamp(13px, 2vw, 19px);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-align: left;
+  text-shadow: 0 0 8px rgba(213, 254, 0, 0.35);
+}
+
+.terminal-screen--archive .topbar-subtitle {
+  margin-top: 6px;
+  color: var(--gray);
+  font-family: var(--font-terminal);
+  font-size: 14px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.terminal-screen--archive .topbar-right {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 150px;
+  color: var(--gray);
+  font-family: var(--font-terminal);
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 1;
+  text-align: right;
+  text-transform: uppercase;
+}
+
 /* =========================================================
    09. TERMINAL CONTENT
    ========================================================= */
@@ -1234,6 +1299,37 @@ p { margin-bottom: 0; }
   .topbar-left { min-width: auto; }
   .topbar-right { min-width: auto; }
   .topbar-title { font-size: 13px; letter-spacing: 1px; }
+
+  .terminal-screen--archive .terminal-topbar {
+    min-height: 78px;
+    padding: 0 14px;
+  }
+
+  .terminal-screen--archive .topbar-brand {
+    gap: 10px;
+  }
+
+  .terminal-screen--archive .terminal-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .terminal-screen--archive .topbar-title {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .terminal-screen--archive .topbar-subtitle {
+    margin-top: 4px;
+    font-size: 11px;
+    letter-spacing: 2px;
+  }
+
+  .terminal-screen--archive .topbar-right {
+    min-width: auto;
+    gap: 5px;
+    font-size: 9px;
+  }
 
   .terminal-content {
     padding: 25px 15px 30px;
