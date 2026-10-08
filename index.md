@@ -8,7 +8,7 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
      BOOT SEQUENCE
      ===================================================== -->
 
-<section id="boot-sequence" aria-label="System initialization">
+<section id="boot-sequence" class="boot-sequence" aria-label="System initialization">
 
   <div class="terminal-line" data-text="> HIM v1.5.1 — COPYRIGHT (C) 1990"></div>
   <div class="terminal-line" data-text="> HEAVENLY IRREGULARITY MONITORING"></div>
@@ -44,7 +44,7 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
       <div class="warning-title">SYSTEM WARNING</div>
       <p>This terminal contains classified research belonging to the Research Division.</p>
       <p>Unauthorized access attempts will be logged and traced.</p>
-      <p>All records are protected under HIM Protocol 666.</p>
+      <p>All records are protected under HIM Protocol 7.</p>
     </div>
   </section>
 
@@ -88,7 +88,7 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
     <a href="#password-gate-1" class="project-item" onclick="document.getElementById('password-gate-1').scrollIntoView({behavior:'smooth'}); return false;">
       <div class="project-item__id">HIM-0042</div>
       <div class="project-item__title">Subject 1510 — Morning Star</div>
-      <div class="project-item__desc">Anatomical study and containment of a celestial entity — Sector 666</div>
+      <div class="project-item__desc">Anatomical study and containment of a celestial entity — Sector 7</div>
       <div class="project-item__status project-item__status--classified">CLASSIFIED</div>
     </a>
     <a href="{{ '/archive' | relative_url }}" class="project-item">
