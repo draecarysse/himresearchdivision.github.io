@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: archive
 title: Secure Archive
 description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
 ---
