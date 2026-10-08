@@ -33,7 +33,7 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
     <h1>HEAVENLY IRREGULARITY<br>MONITORING</h1>
     <div class="division-name">
       RESEARCH DIVISION
-      <span>// EST. 1990 // NODE HIM-1510</span>
+      <span>// EST. 1990 //</span>
     </div>
   </div>
 
@@ -44,7 +44,7 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
       <div class="warning-title">SYSTEM WARNING</div>
       <p>This terminal contains classified research belonging to the Research Division.</p>
       <p>Unauthorized access attempts will be logged and traced.</p>
-      <p>All records are protected under HIM Protocol 7.</p>
+      <p>All records are protected under HIM Protocol 666.</p>
     </div>
   </section>
 
