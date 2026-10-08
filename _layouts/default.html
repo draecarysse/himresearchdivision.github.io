@@ -30,6 +30,11 @@
       <div class="topbar-right">NODE: HIM-1510</div>
     </div>
 
+    <div class="audio-control" data-audio-track="{{ '/assets/audio/him-instrumental.mp3' | relative_url }}">
+      <button class="audio-toggle" type="button" aria-pressed="false">AUDIO: OFF</button>
+      <span class="audio-status" aria-live="polite">SOUND SYSTEM STANDBY</span>
+    </div>
+
     <!-- Terminal content -->
     <div class="terminal-content">
       {{ content }}
