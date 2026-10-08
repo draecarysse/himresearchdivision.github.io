@@ -1,0 +1,14 @@
+/* Font-face declaration for Eurostile Extended */
+
+@font-face {
+  font-family: "Eurostile Extended";
+  src: url("../fonts/Eurostile Extended Regular.woff2") format("woff2"),
+       url("../fonts/EurostileExtendedBlack.woff2")  format("woff"),
+       url("../fonts/Eurostile Extended Regular.ttf")   format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Press Start 2P and VT 323 are loaded from Google Fonts
+   via <link> tags in the layout HTML. */
