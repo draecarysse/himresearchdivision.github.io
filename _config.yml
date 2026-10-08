@@ -2,9 +2,19 @@ title: Heavenly Irregularity Monitoring
 description: Classified Research Archive
 baseurl: "/himresearchdivision.github.io"
 url: "https://draecarysse.github.io"
-
 markdown: kramdown
-
+theme: null
+plugins: []
+include:
+  - _includes
+exclude:
+  - .env
+  - .v3
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - package.json
+  - package-lock.json
 collections:
   archives:
     output: true
