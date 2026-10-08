@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var msg1 = gate1.querySelector(".password-gate__msg");
 
     function check1() {
-      var val = (input1.value || "").trim().toLowerCase();
+      var val = (input1.value || "").trim().toLowerCase().replace(/\s+/g, "");
       if (val === "morningstar") {
         msg1.textContent = "> ACCESS GRANTED. REDIRECTING TO ARCHIVE 01...";
         msg1.className = "password-gate__msg password-gate__msg--ok";
