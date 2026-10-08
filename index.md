@@ -88,7 +88,7 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
     <a href="#password-gate-1" class="project-item" onclick="document.getElementById('password-gate-1').scrollIntoView({behavior:'smooth'}); return false;">
       <div class="project-item__id">HIM-0042</div>
       <div class="project-item__title">Subject 1510 — Morning Star</div>
-      <div class="project-item__desc">Anatomical study and containment of a celestial entity — Sector 7</div>
+      <div class="project-item__desc">Anatomical study and containment of a celestial entity — Sector 666</div>
       <div class="project-item__status project-item__status--classified">CLASSIFIED</div>
     </a>
     <a href="{{ '/archive' | relative_url }}" class="project-item">
