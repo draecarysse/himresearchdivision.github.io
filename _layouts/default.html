@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <title>{{ page.title }} — Heavenly Irregularity Monitoring</title>
+
+  <!-- Google Fonts: Press Start 2P + VT 323 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT+323&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="{{ '/assets/css/fonts.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/normalize.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+</head>
+<body>
+
+  <main class="terminal-screen">
+
+    <!-- Terminal top bar -->
+    <div class="terminal-topbar">
+      <div class="topbar-left">
+        <span class="terminal-dot"></span>
+        <span class="terminal-dot"></span>
+        <span class="terminal-dot"></span>
+      </div>
+      <div class="topbar-title">HIM // RESEARCH DIVISION</div>
+      <div class="topbar-right">NODE: HIM-1510</div>
+    </div>
+
+    <!-- Terminal content -->
+    <div class="terminal-content">
+      {{ content }}
+    </div>
+
+    <!-- Terminal footer -->
+    <footer class="terminal-footer">
+      <span>HEAVENLY IRREGULARITY MONITORING &copy; 1990</span>
+      <span>ALL RECORDS CLASSIFIED</span>
+      <span>NODE: HIM-1510</span>
+    </footer>
+
+  </main>
+
+  <script src="{{ '/assets/js/terminal.js' | relative_url }}"></script>
+</body>
+</html>
