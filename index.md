@@ -1,449 +1,186 @@
 ---
-layout: null
+layout: default
+title: Secure Archive
+description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <meta
-    name="description"
-    content="HEAVENLY IRREGULARITY MONITORING — Classified Archive"
-  >
-
-  <title>
-    Heavenly Irregularity Monitoring — Secure Archive
-  </title>
-
-  <link
-    rel="stylesheet"
-    href="{{ '/assets/css/main.css' | relative_url }}"
-  >
-
-</head>
-
-
-<body>
-
-  <main class="terminal-screen">
-
-
-    <!-- =====================================================
-         TERMINAL HEADER
-         ===================================================== -->
-
-    <header class="terminal-header">
-
-      <div class="header-identity">
-
-        <span
-          class="system-indicator"
-          aria-hidden="true"
-        ></span>
-
-        <div class="header-titles">
-
-          <div class="system-name">
-            HEAVENLY IRREGULARITY MONITORING
-          </div>
-
-          <div class="system-division">
-            RESEARCH DIVISION
-          </div>
-
-        </div>
-
-      </div>
-
-
-      <div class="header-status">
-
-        <div>
-          SECURE ARCHIVE
-        </div>
-
-        <div>
-          NODE: HIM-1510
-        </div>
-
-      </div>
-
-    </header>
-
-
-
-    <!-- =====================================================
-         TERMINAL BODY
-         ===================================================== -->
-
-    <div class="terminal-content">
-
-
-      <!-- ===================================================
-           BOOT SEQUENCE
-           =================================================== -->
-
-      <section
-        id="boot-sequence"
-        aria-label="System initialization"
-      >
-
-        <div
-          class="terminal-line"
-          data-text="> INITIALIZING SECURE ARCHIVE..."
-        ></div>
-
-        <div
-          class="terminal-line"
-          data-text="> ESTABLISHING CONNECTION..."
-        ></div>
-
-        <div
-          class="terminal-line"
-          data-text="> CONNECTION ESTABLISHED."
-        ></div>
-
-        <div
-          class="terminal-line"
-          data-text="> AUTHENTICATION REQUIRED."
-        ></div>
-
-      </section>
-
-
-
-      <!-- ===================================================
-           ARCHIVE INTERFACE
-           =================================================== -->
-
-      <section
-        id="archive-interface"
-        aria-label="Classified archive"
-      >
-
-
-        <!-- ===============================================
-             CLASSIFICATION
-             =============================================== -->
-
-        <div class="classification-row">
-
-          <span class="classified-label">
-            CLASSIFIED ARCHIVE
-          </span>
-
-          <span class="restricted-label">
-            ⚠ RESTRICTED ACCESS
-          </span>
-
-        </div>
-
-
-
-        <!-- ===============================================
-             INTRODUCTION
-             =============================================== -->
-
-        <header class="archive-header">
-
-          <div class="archive-classification">
-            RESEARCH DIVISION // ARCHIVE NODE HIM-1510
-          </div>
-
-          <h1>
-            HEAVENLY IRREGULARITY MONITORING
-          </h1>
-
-          <p class="archive-subtitle">
-            CLASSIFIED RESEARCH ARCHIVE
-            <span class="separator">//</span>
-            ACCESS LEVEL: RESTRICTED
-          </p>
-
-        </header>
-
-
-
-        <!-- ===============================================
-             WARNING
-             =============================================== -->
-
-        <section class="warning-box">
-
-          <div class="warning-title">
-            SYSTEM WARNING
-          </div>
-
-          <p>
-            This terminal contains classified research
-            belonging to the Research Division.
-          </p>
-
-          <p>
-            Unauthorized access attempts will be logged.
-          </p>
-
-        </section>
-
-
-
-        <!-- ===============================================
-             SYSTEM STATUS
-             =============================================== -->
-
-        <h2 class="section-title">
-          SYSTEM STATUS
-        </h2>
-
-
-        <div class="status-grid">
-
-
-          <div class="status-card">
-
-            <span class="status-label">
-              ARCHIVE
-            </span>
-
-            <span class="status-value">
-              UNKNOWN
-            </span>
-
-          </div>
-
-
-          <div class="status-card">
-
-            <span class="status-label">
-              SUBJECT
-            </span>
-
-            <span class="status-value active">
-              1510
-            </span>
-
-          </div>
-
-
-          <div class="status-card">
-
-            <span class="status-label">
-              STATUS
-            </span>
-
-            <span class="status-value warning">
-              CLASSIFIED
-            </span>
-
-          </div>
-
-
-        </div>
-
-
-
-        <!-- ===============================================
-             SUBJECT RECORD
-             =============================================== -->
-
-        <h2 class="section-title">
-          SUBJECT RECORD
-        </h2>
-
-
-        <article class="subject-record">
-
-
-          <header class="subject-record-header">
-
-            <div>
-
-              <span class="record-label">
-                ARCHIVE RECORD
-              </span>
-
-              <h2>
-                SUBJECT 1510
-              </h2>
-
-            </div>
-
-
-            <div class="subject-id">
-              ID: HIM-1510
-            </div>
-
-          </header>
-
-
-
-          <div class="subject-record-body">
-
-
-            <div class="subject-data">
-
-
-              <div class="data-label">
-                DESIGNATION
-              </div>
-
-              <div class="data-value">
-                SUBJECT 1510
-              </div>
-
-
-              <div class="data-label">
-                ARCHIVE STATUS
-              </div>
-
-              <div class="data-value classified">
-                CLASSIFIED
-              </div>
-
-
-              <div class="data-label">
-                DATE
-              </div>
-
-              <div class="data-value">
-                15 / 10
-              </div>
-
-
-              <div class="data-label">
-                LOCATION
-              </div>
-
-              <div class="data-value">
-                UNKNOWN
-              </div>
-
-
-              <div class="data-label">
-                ORIGIN
-              </div>
-
-              <div class="data-value">
-                UNKNOWN
-              </div>
-
-
-              <div class="data-label">
-                INVESTIGATION
-              </div>
-
-              <div class="data-value">
-                ACTIVE
-              </div>
-
-
-            </div>
-
-          </div>
-
-        </article>
-
-
-
-        <!-- ===============================================
-             ARCHIVE INFORMATION
-             =============================================== -->
-
-        <h2 class="section-title">
-          ARCHIVE INFORMATION
-        </h2>
-
-
-        <div class="archive-text">
-
-          <p>
-            The following record has been classified
-            under the highest available security level.
-          </p>
-
-          <p>
-            Available information concerning
-            <span class="highlight">
-              SUBJECT 1510
-            </span>
-            remains incomplete.
-          </p>
-
-          <p>
-            Several entries have been removed,
-            corrupted, or rendered inaccessible.
-          </p>
-
-          <p>
-            Further investigation is required.
-          </p>
-
-        </div>
-
-
-
-        <!-- ===============================================
-             TERMINAL PROMPT
-             =============================================== -->
-
-        <div class="terminal-prompt">
-
-          <span>
-            AWAITING AUTHENTICATION
-          </span>
-
-          <span class="cursor">
-            █
-          </span>
-
-        </div>
-
-
-
-        <!-- ===============================================
-             FOOTER
-             =============================================== -->
-
-        <footer class="archive-footer">
-
-          <div>
-            HEAVENLY IRREGULARITY MONITORING
-          </div>
-
-          <div>
-            RESEARCH DIVISION
-            //
-            NODE HIM-1510
-          </div>
-
-          <div class="system-status">
-            SYSTEM STATUS: ONLINE
-          </div>
-
-        </footer>
-
-
-      </section>
-
-
+<!-- =====================================================
+     BOOT SEQUENCE
+     ===================================================== -->
+
+<section id="boot-sequence" aria-label="System initialization">
+
+  <div class="terminal-line" data-text="> HIM BIOS v1.5.1 — COPYRIGHT (C) 1990"></div>
+  <div class="terminal-line" data-text="> HEAVENLY IRREGULARITY MONITORING"></div>
+  <div class="terminal-line" data-text="> RESEARCH DIVISION — NODE HIM-1510"></div>
+  <div class="terminal-line" data-text="> MEMORY CHECK ........ 65536 KB OK"></div>
+  <div class="terminal-line" data-text="> CPU: HIM-X8 @ 433 MHz"></div>
+  <div class="terminal-line" data-text="> DETECTING PERIPHERALS ... OK"></div>
+  <div class="terminal-line" data-text="> MOUNTING /dev/archive0 . OK"></div>
+  <div class="terminal-line" data-text="> ESTABLISHING UPLINK .... OK"></div>
+  <div class="terminal-line" data-text="> AUTHENTICATION REQUIRED."></div>
+
+</section>
+
+<!-- =====================================================
+     ARCHIVE INTERFACE (hidden until boot completes)
+     ===================================================== -->
+
+<section id="archive-interface" class="hidden" aria-label="Classified archive">
+
+  <div class="institute-heading">
+    <div class="classified-label">CLASSIFIED ARCHIVE — RESTRICTED ACCESS</div>
+    <h1>HEAVENLY IRREGULARITY<br>MONITORING</h1>
+    <div class="division-name">
+      RESEARCH DIVISION
+      <span>// EST. 1990 // NODE HIM-1510</span>
+    </div>
+  </div>
+
+  <!-- Warning box -->
+  <section class="warning-box">
+    <div class="warning-symbol">&#9888;</div>
+    <div class="warning-content">
+      <div class="warning-title">SYSTEM WARNING</div>
+      <p>This terminal contains classified research belonging to the Research Division.</p>
+      <p>Unauthorized access attempts will be logged and traced.</p>
+      <p>All records are protected under HIM Protocol 7.</p>
+    </div>
+  </section>
+
+  <!-- System status -->
+  {% include system-status.html %}
+
+  <!-- Frequency log -->
+  <h2 class="section-title">FREQUENCY LOG</h2>
+
+  <div class="freq-log">
+    <div class="freq-log__title">ACTIVE MONITORING — SECTOR 7</div>
+
+    <div class="freq-row">
+      <span class="freq-row__freq">14.332 MHz</span>
+      <span class="freq-row__status freq-row__status--ok">STABLE</span>
+    </div>
+    <div class="freq-row">
+      <span class="freq-row__freq">27.891 MHz</span>
+      <span class="freq-row__status freq-row__status--warn">FLUCTUATING</span>
+    </div>
+    <div class="freq-row">
+      <span class="freq-row__freq">108.44 MHz</span>
+      <span class="freq-row__status freq-row__status--err">ANOMALY</span>
+    </div>
+    <div class="freq-row">
+      <span class="freq-row__freq">433.92 MHz</span>
+      <span class="freq-row__status freq-row__status--ok">STABLE</span>
+    </div>
+    <div class="freq-row">
+      <span class="freq-row__freq">902.11 MHz</span>
+      <span class="freq-row__status freq-row__status--warn">FLUCTUATING</span>
     </div>
 
+    <div class="freq-log__footer">LAST SWEEP: 04:22:18 UTC</div>
+  </div>
 
-  </main>
+  <!-- Active projects -->
+  <h2 class="section-title">ACTIVE INVESTIGATIONS</h2>
 
+  <ul class="project-list">
+    <a href="#password-gate-1" class="project-item" onclick="document.getElementById('password-gate-1').scrollIntoView({behavior:'smooth'}); return false;">
+      <div class="project-item__id">HIM-0042</div>
+      <div class="project-item__title">Subject 1510 — Morning Star</div>
+      <div class="project-item__desc">Anatomical study and containment of a celestial entity — Sector 7</div>
+      <div class="project-item__status project-item__status--classified">CLASSIFIED</div>
+    </a>
+    <a href="{{ '/archive' | relative_url }}" class="project-item">
+      <div class="project-item__id">HIM-0031</div>
+      <div class="project-item__title">Archive Retrieval System</div>
+      <div class="project-item__desc">Historical document indexing and cross-referencing</div>
+      <div class="project-item__status project-item__status--active">ACTIVE</div>
+    </a>
+    <a href="{{ '/archive' | relative_url }}" class="project-item">
+      <div class="project-item__id">HIM-0028</div>
+      <div class="project-item__title">Energy Anomaly Detection</div>
+      <div class="project-item__desc">Tracking corrupted golden energy signatures — ongoing</div>
+      <div class="project-item__status project-item__status--suspended">SUSPENDED</div>
+    </a>
+    <a href="{{ '/archive' | relative_url }}" class="project-item">
+      <div class="project-item__id">HIM-0019</div>
+      <div class="project-item__title">Predecessor Archive Recovery</div>
+      <div class="project-item__desc">Decoding pre-company records of the four earlier descents</div>
+      <div class="project-item__status project-item__status--archived">ARCHIVED</div>
+    </a>
+  </ul>
 
-  <script
-    src="{{ '/assets/js/terminal.js' | relative_url }}"
-  ></script>
+  <!-- Subject record -->
+  <h2 class="section-title">SUBJECT RECORD</h2>
 
-</body>
+  <article class="archive-record">
+    <header class="record-header">
+      <span>ARCHIVE RECORD</span>
+      <span>SUBJECT 1510</span>
+      <span>ID: HIM-1510</span>
+    </header>
+    <div class="record-body">
+      <div class="record-line">
+        <span>DESIGNATION</span>
+        <strong>SUBJECT 1510</strong>
+      </div>
+      <div class="record-line">
+        <span>COMMON NAME</span>
+        <strong class="classified">THE MORNING STAR</strong>
+      </div>
+      <div class="record-line">
+        <span>ARCHIVE STATUS</span>
+        <strong class="classified">CLASSIFIED</strong>
+      </div>
+      <div class="record-line">
+        <span>DATE</span>
+        <strong>15 / 10</strong>
+      </div>
+      <div class="record-line">
+        <span>LOCATION</span>
+        <strong>UNKNOWN</strong>
+      </div>
+      <div class="record-line">
+        <span>ORIGIN</span>
+        <strong>UNKNOWN</strong>
+      </div>
+      <div class="record-line">
+        <span>INVESTIGATION</span>
+        <strong>ACTIVE</strong>
+      </div>
+    </div>
+    <footer class="record-footer">
+      <span>RECORD 001</span>
+      <span>STATUS: PARTIALLY RECOVERED</span>
+    </footer>
+  </article>
 
-</html>
+  <!-- Password gate 1 -->
+  <div class="password-gate" id="password-gate-1">
+    <div class="password-gate__label">TERMINAL ACCESS — ENTER CREDENTIALS</div>
+    <p class="password-gate__hint">
+      Authentication required to access classified records.
+      Enter the name given to the entity that descended during the fifth extinction.
+    </p>
+    <input type="text" class="password-gate__input" placeholder="ENTER KEY..." autocomplete="off">
+    <br>
+    <button class="password-gate__btn" data-redirect="{{ '/files/morning-star' | relative_url }}">Authenticate</button>
+    <div class="password-gate__msg"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="him-nav">
+    <a href="{{ '/' | relative_url }}" class="active">Home</a>
+    <a href="{{ '/archive' | relative_url }}">Archive</a>
+    <a href="{{ '/files/morning-star' | relative_url }}">Files</a>
+  </nav>
+
+  <!-- Terminal prompt -->
+  <div class="terminal-prompt">
+    <span class="prompt-symbol">&gt;</span>
+    <span>AWAITING AUTHENTICATION</span>
+    <span class="cursor">&#9608;</span>
+  </div>
+
+</section>
