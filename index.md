@@ -44,7 +44,7 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
       <div class="warning-title">SYSTEM WARNING</div>
       <p>This terminal contains classified research information belonging to the Research Division.</p>
       <p>Attempts at unauthorized access will be logged and investigated.</p>
-      <p>All records are protected under HIM Protocol 7.</p>
+      <p>All records are protected under HIM ⋮ Protocol 666.</p>
     </div>
   </section>
 
