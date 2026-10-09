@@ -16,7 +16,7 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
   <div class="terminal-line" data-text="> MEMORY CHECK ........ SUCCESSFULLY REVIEWED"></div>
   <div class="terminal-line" data-text="> CPU: HIM-X8 @ 666 MHz"></div>
   <div class="terminal-line" data-text="> DETECTING PERIPHERALS ... SUCCESSFULLY REVIEWED"></div>
-  <div class="terminal-line" data-text="> MOUNTING /dev/archive0 . SUCCESSFULLY REVIEWED"></div>
+  <div class="terminal-line" data-text="> ASSEMBLING /dev/archive0 . SUCCESFULLY ASSEMBLED "></div>
   <div class="terminal-line" data-text="> ESTABLISHING UPLINK .... SUCCESSFULLY REVIEWED"></div>
   <div class="terminal-line" data-text="> AUTHENTICATION REQUIRED."></div>
 
@@ -33,7 +33,7 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
     <h1>HEAVENLY IRREGULARITY<br>MONITORING</h1>
     <div class="division-name">
       RESEARCH DIVISION
-      <span>// EST. 1990 // NODE HIM-1510</span>
+      <span>╰┈➤ EST. 1990 𝄃𝄂𝄀𝄁𝄃𝄂𝄂𝄃 NODE HIM-1510</span>
     </div>
   </div>
 
@@ -42,8 +42,8 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
     <div class="warning-symbol">&#9888;</div>
     <div class="warning-content">
       <div class="warning-title">SYSTEM WARNING</div>
-      <p>This terminal contains classified research belonging to the Research Division.</p>
-      <p>Unauthorized access attempts will be logged and traced.</p>
+      <p>This terminal contains classified research information belonging to the Research Division.</p>
+      <p>Attempts at unauthorized access will be logged and investigated.</p>
       <p>All records are protected under HIM Protocol 7.</p>
     </div>
   </section>
@@ -58,7 +58,7 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
     <div class="freq-log__title">ACTIVE MONITORING — SECTOR 666</div>
 
     <div class="freq-row">
-      <span class="freq-row__freq">14.332 MHz</span>
+      <span class="freq-row__freq">444.87 MHz</span>
       <span class="freq-row__status freq-row__status--ok">STABLE</span>
     </div>
     <div class="freq-row">
@@ -78,7 +78,7 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
       <span class="freq-row__status freq-row__status--warn">FLUCTUATING</span>
     </div>
 
-    <div class="freq-log__footer">LAST SWEEP: 04:22:18 UTC</div>
+    <div class="freq-log__footer">LAST SWEEP: 08:10:18 UTC</div>
   </div>
 
   <!-- Active projects -->
@@ -88,25 +88,25 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
     <a href="#password-gate-1" class="project-item" onclick="document.getElementById('password-gate-1').scrollIntoView({behavior:'smooth'}); return false;">
       <div class="project-item__id">HIM-0042</div>
       <div class="project-item__title">Subject 1510 — Morning Star</div>
-      <div class="project-item__desc">Anatomical study and containment of a celestial entity — Sector 7</div>
+      <div class="project-item__desc">Anatomical study and containment of a celestial entity — Sector 666</div>
       <div class="project-item__status project-item__status--classified">CLASSIFIED</div>
     </a>
     <a href="{{ '/archive' | relative_url }}" class="project-item">
       <div class="project-item__id">HIM-0031</div>
       <div class="project-item__title">Archive Retrieval System</div>
-      <div class="project-item__desc">Historical document indexing and cross-referencing</div>
+      <div class="project-item__desc">Indexing and cross-referencing of historical documents</div>
       <div class="project-item__status project-item__status--active">ACTIVE</div>
     </a>
     <a href="{{ '/archive' | relative_url }}" class="project-item">
       <div class="project-item__id">HIM-0028</div>
       <div class="project-item__title">Energy Anomaly Detection</div>
-      <div class="project-item__desc">Tracking corrupted golden energy signatures — ongoing</div>
+      <div class="project-item__desc">Tracking signs of corrupted golden energy</div>
       <div class="project-item__status project-item__status--suspended">SUSPENDED</div>
     </a>
     <a href="{{ '/archive' | relative_url }}" class="project-item">
       <div class="project-item__id">HIM-0019</div>
       <div class="project-item__title">Predecessor Archive Recovery</div>
-      <div class="project-item__desc">Decoding pre-company records of the four earlier descents</div>
+      <div class="project-item__desc">Analysis of the company's historical records, covering the previous four generations</div>
       <div class="project-item__status project-item__status--archived">ARCHIVED</div>
     </a>
   </ul>
@@ -118,7 +118,7 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
     <header class="record-header">
       <span>ARCHIVE RECORD</span>
       <span>SUBJECT 1510</span>
-      <span>ID: HIM-1510</span>
+      <span>ID: SWEET-666</span>
     </header>
     <div class="record-body">
       <div class="record-line">
@@ -127,7 +127,7 @@ description: HEAVENLY IRREGULARITY MONITORING — Classified Archive
       </div>
       <div class="record-line">
         <span>COMMON NAME</span>
-        <strong class="classified">THE MORNING STAR</strong>
+        <strong class="classified">T__ M__N____ __A_</strong>
       </div>
       <div class="record-line">
         <span>ARCHIVE STATUS</span>
